@@ -8,7 +8,7 @@ Citizen.CreateThread(function()
 		SetDiscordRichPresenceAssetText('example') -- Text for your logo 
 				
 		local playerCount = #GetActivePlayers()
-        local playerName = GetPlayerName(PlayerId())
+                local playerName = GetPlayerName(PlayerId())
 		local maxPlayerSlots = "40"
 		
 		SetRichPresence(string.format("%s - %s/%s", playerName, playerCount, maxPlayerSlots))
