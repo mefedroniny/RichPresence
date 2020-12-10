@@ -5,7 +5,7 @@ Citizen.CreateThread(function()
 		
 		SetDiscordRichPresenceAsset('example') -- Logo your server on discord developer portal
 		
-		SetDiscordRichPresenceAssetText('example') -- Text for your logo 
+		SetDiscordRichPresenceAssetText('example') -- Text for your logo  -- Text for your logo 
 				
 		local playerCount = #GetActivePlayers()
                 local playerName = GetPlayerName(PlayerId())
