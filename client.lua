@@ -1,17 +1,19 @@
 Citizen.CreateThread(function()
 	while true do
 		
-		SetDiscordAppId(762035981192790067) -- Client id for your bot
+	      SetDiscordAppId(9999999999999999) 
 		
-		SetDiscordRichPresenceAsset('example') -- Logo your server on discord developer portal
+	      SetDiscordRichPresenceAsset('picturename') 
 		
-		SetDiscordRichPresenceAssetText('example') -- Text for your logo  -- Text for your logodsa 
+	      SetDiscordRichPresenceAssetText('picturename') 
 				
-		local playerCount = #GetActivePlayers()
-                local playerName = GetPlayerName(PlayerId())
-		local maxPlayerSlots = "40"
+	      local playerCount = #GetActivePlayers()
+              local playerName = GetPlayerName(PlayerId())
+	      local maxPlayerSlots = "124" -- slots 
 		
-		SetRichPresence(string.format("%s - %s/%s", playerName, playerCount, maxPlayerSlots))
-        Citizen.Wait(60000)
+	      SetRichPresence(string.format("%s - %s/%s", playerName, playerCount, maxPlayerSlots))
+              Citizen.Wait(60000)
+
+	      SetDiscordRichPresenceAction(1, "Discord", "https://discord.gg/")
     end
 end)
